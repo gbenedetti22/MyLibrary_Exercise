@@ -56,11 +56,5 @@ public class MyIndexedLibrary extends MyLibrary implements IndexedLibrary {
         System.arraycopy(books, 0, result, 0, index);
         System.arraycopy(books, index + 1, result, index, books.length - index - 1);
         books = result;
-        printList();
-    }
-    private void printList(){
-        for (IndexedBook book : books) {
-            System.out.print(book.getTitle() + ";");
-        }
     }
 }

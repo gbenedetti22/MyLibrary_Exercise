@@ -156,15 +156,4 @@ class BookList {
         return new_array;
     }
 
-//    private void printList()
-//    {
-//        BookNode temp = head;
-//        while (temp!=null)
-//        {
-//            System.out.print(temp.bk.getAuthor() + " -> ");
-//            temp = temp.next;
-//        }
-//        System.out.println("null");
-//    }
-
 }
