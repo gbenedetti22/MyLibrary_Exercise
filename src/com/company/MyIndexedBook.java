@@ -11,6 +11,11 @@ public class MyIndexedBook extends MyBook implements IndexedBook {
         this.code = code;
         this.genre = genre;
     }
+    public MyIndexedBook(String author, String title, String publisher, int year, int code) {
+        super(author, title, publisher, year);
+        this.code = code;
+        this.genre = "undefined";
+    }
 
     @Override
     public int getIndex() {

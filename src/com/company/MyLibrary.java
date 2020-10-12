@@ -4,7 +4,7 @@ import com.company.profClass.Book;
 import com.company.profClass.Library;
 
 public class MyLibrary implements Library {
-    BookList library;
+    protected BookList library;
 
     public MyLibrary(){
         library = new BookList();

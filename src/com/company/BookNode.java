@@ -4,8 +4,8 @@ import com.company.profClass.Book;
 
 class BookList {
     class BookNode {
-        private Book bk;
-        private BookNode next;
+        protected Book bk;
+        protected BookNode next;
 
         public BookNode(Book bk) {
             this.bk = bk;
@@ -13,8 +13,8 @@ class BookList {
         }
     }
 
-    BookNode head = null;
-    BookNode tail = null;
+    private BookNode head = null;
+    private BookNode tail = null;
 
     public void insert(Book bk) {
         BookNode element = new BookNode(bk);
@@ -154,6 +154,10 @@ class BookList {
         System.arraycopy(array, 0, new_array, 0, array.length);
 
         return new_array;
+    }
+
+    public BookNode getFirstBook() {
+        return head;
     }
 
 }
